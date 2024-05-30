@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './components/app/app.component';
 import { PagesModule } from './components/pages/pages.module';
+import { HelpersModule } from './components/helpers/helpers.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { PagesModule } from './components/pages/pages.module';
     CommonModule,
     AppRoutingModule,
     BrowserModule,
-    PagesModule
+    PagesModule,
+    HelpersModule
   ]
 })
 export class AppModule { }
