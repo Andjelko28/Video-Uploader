@@ -1,0 +1,43 @@
+body,
+html{
+    margin: 0;
+}
+
+
+.logo-img {
+    background-image: url('../img/vv-logo.png');
+    width: 50px;
+    height: 50px;
+    background-position: center;
+}
+
+.a-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    font-size: 1.7em;
+}
+
+nav{
+    
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+}
+
+.navbar-menu-ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.7em;
+}
+
+.navbar-menu-list{
+    text-decoration: none;
+    margin: 1rem;
+}
