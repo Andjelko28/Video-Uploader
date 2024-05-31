@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('./assets/styles/navbar.scss');
-@import url('./assets/styles/homepage.scss');
+
+@use './assets/colors/colors.scss';
+@use './assets/styles/navbar.scss';
+@use './assets/styles/homepage.scss';
+
+@font-face{
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato/Lato-Regular.ttf');
+}

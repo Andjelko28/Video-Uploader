@@ -1,6 +1,9 @@
+@use '../colors/colors' as c;
+
 body,
 html{
     margin: 0;
+    font-family: 'Lato';
 }
 
 
@@ -17,10 +20,14 @@ html{
     gap: 1rem;
     text-decoration: none;
     font-size: 1.7em;
+    color: c.$white-color;
+}
+
+.a-logo:hover{
+    opacity: 0.8;
 }
 
 nav{
-    
     box-sizing: border-box;
     display: flex;
     padding: 1rem;
@@ -40,4 +47,5 @@ nav{
 .navbar-menu-list{
     text-decoration: none;
     margin: 1rem;
+    color: c.$white-color;
 }
