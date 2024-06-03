@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationStart, RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'frontend';
+
+  showNav: boolean = false;
+
+  constructor(private router:Router){
+    router.events.forEach((event)=>{
+      if(event instanceof NavigationStart){
+        this.showNav = event.url !== '/login' && event.url !== '/register';
+      }
+    })
+  }
 }
