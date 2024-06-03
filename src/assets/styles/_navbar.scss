@@ -24,12 +24,12 @@ html{
     transition: 0.5s;
 }
 
-.register-btn{
+.upload-btn{
     transition: 0.5s;
 }
 
 .a-logo:hover,
-.register-btn:hover{
+.upload-btn:hover{
     opacity: 0.8;
 }
 
@@ -58,7 +58,7 @@ nav{
 
 .join-btn{
     background-color:white ;
-    padding: 0.8rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
     color: black;
     transition: 0.5s;
